@@ -1,0 +1,57 @@
+<div class="vcourse_nav fullWidth">
+	<ul>
+		<li><a href="#">恋爱秘籍</a></li>
+		<li><a href="#">私教</a></li>
+		<li><a href="#">挽回狙击</a></li>
+		<li><a href="#">实战</a></li>
+		<li><a href="#">全托</a></li>
+		<li><a href="#">精品课</a></li>
+	</ul>
+</div>
+<div class="vcourse_banner fullWidth">
+<foreach name='banner' item="id">
+	<a href="#" title=""><img src="<{$id.path}>" alt=""></a>
+</foreach>
+</div>
+<div class="bodyauto">
+	<dl class="vcourse_tuijian fullWidth">
+		<dt>推荐课程<img src="__OIMAGES__/jiao1.png"></dt>
+		<dd>
+		<foreach name="remmend" item='id'>
+		<a href="#"><{$id.title}></a>
+		</foreach>
+		</dd>
+	</dl>
+<foreach name="data" item="id">
+	<dl class="vcourse_classify fullWidth">
+		<dt>
+			<p class="left"><span><{$id.name}></span><{$id.brief}></p>
+			<p class="right"><a href="/vcourse/entry/<{$id.type}>">更多<i>&gt;</i></a></p>
+		</dt>
+		<dd>
+			<ul class="vcourse_list1 fullWidth">
+			<foreach name='id["child"]' item="v" key='keys'>
+				<if condition="$keys lt 4" >
+				<li>
+					<div class="box">
+						<div class="pic">
+							<a href="/vcourse/entry/<{$id.type}>/<{$v.id}>" title="">
+								<img originalsrc="<{$v.thumbpath}>" src="__IMAGES__/defaultpic.gif" alt="" class="lazy">
+								<p><span></span><label><{$v.number}>人已学</label></p>
+							</a>
+						</div>
+						<p class="tt"><span><{$v.title}></span><label>课时<{$v.lesson}>节</label></p>
+						<p class="price">￥<b><{$v.price}></b>/VIP2:￥<{$v.vip_price}></p>
+					</div>
+				</li>
+				</if>
+			</foreach>
+				
+			</ul>
+		</dd>
+	</dl>
+</foreach>
+
+	</dl>
+
+</div>

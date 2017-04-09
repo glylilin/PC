@@ -1,0 +1,30 @@
+
+<div class="bodyauto">
+	<div class="vcourse_location fullWidth"><a href="#">首页</a><span>&gt;</span><a href="#">VIP课程</a><span>&gt;</span><{$data.name}></div>
+	<div class="whiteBg fullWidth">
+		<script type="text/javascript" src="js/paixu.js"></script>
+		<dl class="vcourse_rank fullWidth">
+			<dt>私教</dt>
+			<dd>
+				<p onclick="paixu(0)">综合排序</p><p onclick="paixu(1)">热门</p><p onclick="paixu(2)">价格<em><i class="top"></i><i class="bottom"></i></em></p>
+			</dd>
+		</dl>
+		<ul class="vcourse_list1 fullWidth">
+		<foreach name='data["child"]' item='id'>
+			<li>
+				<div class="box">
+					<div class="pic">
+						<a href="<{$id.id}>" title="">
+							<img originalsrc="<{$id.thumbpath}>"  src="__IMAGES__/defaultpic.gif" alt="" class="lazy">
+							<p><span></span><label><{$id.number}>人已学</label></p>
+						</a>
+					</div>
+					<p class="tt"><span><{$id.title}></span><label>课时<{$id.lesson}>节</label></p>
+					<p class="price">￥<b class="jiage"><{$id.price}></b>/VIP2:￥<{$id.vip_price}></p>
+				</div>
+			</li>
+			</foreach>
+		</ul>
+	</div>
+
+</div>

@@ -1,0 +1,149 @@
+<dl class="vcourse_pay_box">
+	<dt><p>购买课程</p><a class="close"><img src="__IMAGES__/close.png"></a></dt>
+	<dd>
+		<div class="pic">
+			<p class="left"><img src="<{$data.self.path}>" alt=""/></p>
+			<p class="right">
+				<span class="tt">恋爱魔方</span>
+				<span class="time">课时：<{$data.self.time}></span>
+				<span class="price">￥<b>1999</b></span>
+			</p>
+		</div>
+		<div class="btn">
+			<form action="pay.php">
+				<p class="left"><label><input type="checkbox" name="">同意</label><a href="#">《浪迹教育用户服务协议》</a></p>
+				<P class="right"><span class="cancel">取消</span><button>去支付</button></p>
+			</form>
+		</div>
+	</dd>
+</dl>
+<div class="bodyauto">
+	<dl class="vcourse_intro fullWidth">
+		<dt><img src="<{$data.self.path}>"></dt>
+		<dd>
+			<div class="tt"><h2><{$data.self.title}></h2><span><{$data.self.time}></span></div>
+			<div class="people"><span><img src="__OIMAGES__/zan1.png"><{$data.self.like}></span><span><img src="__OIMAGES__/people.png"><{$data.self.number}></span></div>
+			<div class="intro">
+				<span>本课程适合人群：</span><p><{$data.self.summary}></p>
+			</div>
+			<div class="price">￥<span><{$data.self.price}></span></div>
+			<div class="buy"><a class="btn">购买课程</a><a href="#" target="_blank">咨询</a></div>
+			<div class="share">
+				<span>分享到：</span>
+				<div class="bdsharebuttonbox">
+				<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+				<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+				<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+				<a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+				</div>
+				<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{}};
+				with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+			</div>
+		</dd>
+	</dl>
+
+	<div class="body_right">
+		<div class="whiteBg fullWidth2">
+			<!-- <dl class="vcourse_daoshi">
+				<dt>课程主讲导师</dt>
+				<dd>
+					<div class="name">
+						<span><img src="__OIMAGES__/mentor1.jpg" alt=""></span>
+						<p><label>大尧 Mr. Yao</label>实名认证导师</p>
+					</div>
+					<div class="con">《简爱》创始人，《大尧秀》主持人，《话术红宝书》联合作者，澳洲海归，前职业魔术师，思维天马行空的顶级话术艺术家</div>
+				</dd>
+			</dl> -->
+
+			<dl class="vcourse_right_like">
+				<dt>你可能感兴趣的课程</dt>
+				<dd>
+					<ul class="vcourse_list1 fullWidth2">
+						<li class="li2">
+							<div class="box">
+								<div class="pic">
+									<a href="#" title="">
+										<img originalsrc="__OIMAGES__/001.jpg" alt="" class="lazy">
+										<p><span>传奇PUA魔卡</span><label>2579人已学</label></p>
+									</a>
+								</div>
+								<p class="tt"><span>恋爱方法</span><label>课时1节</label></p>
+								<p class="price">￥<b>18000</b>/VIP2:￥17000</p>
+							</div>
+						</li>
+						<li class="li2">
+							<div class="box">
+								<div class="pic">
+									<a href="#" title="">
+										<img originalsrc="__OIMAGES__/001.jpg" alt="" class="lazy">
+										<p><span>传奇PUA魔卡</span><label>2579人已学</label></p>
+									</a>
+								</div>
+								<p class="tt"><span>恋爱方法</span><label>课时1节</label></p>
+								<p class="price">￥<b>18000</b>/VIP2:￥17000</p>
+							</div>
+						</li>
+					</ul>
+				</dd>
+			</dl>
+
+		</div>
+		<dl class="app_download fullWidth2">
+			<dt><b>浪迹教育APP</b>从屌丝蜕变男神神器</dt>
+			<dd>
+				<span><img src="__IMAGES__/app_download.jpg"></span>
+				<p><img src="__IMAGES__/app_logo.png">扫码下载</p>
+				<label><img src="__IMAGES__/icon1.png"></label>
+			</dd>
+		</dl>
+	</div>
+
+	<div class="body_left whiteBg">
+		<div class="vcourse_left_title"><span class="current">套餐介绍</span><span>评论</span></div>
+		<div class="vcourse_tab fullWidth2">
+			<div class="vcourse_con">
+				<!-- <{$data.self.title}>：<br/> -->
+				<{$data.self.content}>
+			</div>
+			
+			<ul class="vcourse_list1 fullWidth2">
+			<foreach name='data["child"]' item='id'>
+				<li class="li3">
+					<div class="box">
+						<div class="pic">
+							<a href="#" title="">
+								<img originalsrc="<{$id.thumbpath}>" alt="" class="lazy">
+								<p><span></span><label><{$id.number}>人已学</label></p>
+							</a>
+						</div>
+						<p class="tt"><span><{$id.title}></span><label>课时<{$id.lesson}>节</label></p>
+					</div>
+				</li>
+				</foreach>
+			</ul>
+
+		</div>
+		<div class="vcourse_tab" style="display:none;">
+			<dl class="comment_form" vid="<{$data.self.id}>">
+				<!-- <dt>网友评论</dt> -->
+				<dd>
+					
+						<textarea placeholder="文明上网理性发言，请遵守新闻评论服务协议" class="comment_content"></textarea>
+						<p><button class="submitComment">提交</button></p>
+				
+				</dd>
+			</dl>
+			<dl class="comment_list">
+				<dt>全部评论<img src="__IMAGES__/comment.png"/><span><{$data.self.comment}></span></dt>
+				<if condition="$comments['status']">
+				<foreach name='comments["data"]' item="id">
+				<dd>
+				<?=W('Comment/item',array($id))?>
+				</dd>
+				</foreach>
+			</if>
+			</dl>
+			<div class="comment_more"><a href="#">加载更多</a></div>
+		</div>
+	</div>
+</div>
