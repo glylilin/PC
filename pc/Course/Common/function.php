@@ -35,4 +35,25 @@ function formatAddTime($time){
     
     return $msg;
 }
+
+function formatImageHtmlContent($html){
+    $html = str_replace("<section>","",$html);
+    $html = str_replace("</section>","",$html);
+    $pattren = "/src=['|\"]\S+['|\"]/is";
+    preg_match_all($pattren, $html,$matchs);
+	if($matchs && $matchs[0]){
+	
+	    foreach ($matchs[0] as $v){
+	        if(!stripos($v,'http') && !stripos($v,'https')){
+	            $intend = stripos($v,'upload');
+	            $end = substr($v,$intend);
+	            $replace = 'src="http://static.puamap.com/'.$end.'"';
+	           $html =  str_replace($v,$replace,$html);
+	        }
+	    }
+
+	}
+	
+    return $html;
+}
 ?>

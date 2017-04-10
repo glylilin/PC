@@ -99,13 +99,13 @@
 	</div>
 
 	<div class="body_left whiteBg">
-		<div class="vcourse_left_title"><span class="current">套餐介绍</span><span>评论</span></div>
+		<div class="vcourse_left_title"><span class="current"><if condition="$data['self']['type'] eq 1 ">套餐介绍 <else/>课程介绍</if></span><span>评论</span></div>
 		<div class="vcourse_tab fullWidth2">
 			<div class="vcourse_con">
 				<!-- <{$data.self.title}>：<br/> -->
-				<{$data.self.content}>
+				<{$data.self.content|formatImageHtmlContent=###}>
 			</div>
-			
+			<if condition="$data['self']['type'] eq 1 ">
 			<ul class="vcourse_list1 fullWidth2">
 			<foreach name='data["child"]' item='id'>
 				<li class="li3">
@@ -121,7 +121,7 @@
 				</li>
 				</foreach>
 			</ul>
-
+			</if>
 		</div>
 		<div class="vcourse_tab" style="display:none;">
 			<dl class="comment_form" vid="<{$data.self.id}>">
@@ -143,7 +143,9 @@
 				</foreach>
 			</if>
 			</dl>
-			<div class="comment_more"><a href="#">加载更多</a></div>
+			<if condition="$comments['data']">
+			<div class="comment_more" vid="<{$data.self.id}>"  page='1'><a>加载更多</a></div>
+			</if>
 		</div>
 	</div>
 </div>

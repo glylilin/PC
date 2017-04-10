@@ -35,17 +35,11 @@ class IndexController extends Controller {
     public function colnum($type,$id){
     	$course_service =  D("Course","Service");
     	$result = $course_service->getCourseChildListByTypeAndIdService($type,$id);
-    	switch ($type){
-    	    case "1":
-    	        $tpl = 'group';
-    	        break;
-    	}
     	$comment_service = D("Comment",'Service');
     	$comment_list= $comment_service->getCommentByRelIdService($id);
-    	
     	$this->assign('data',$result);
     	$this->assign('comments',$comment_list);
-    	$this->display($tpl);
+    	$this->display("group");
     	
     }
     

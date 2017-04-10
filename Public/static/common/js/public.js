@@ -236,8 +236,12 @@ $(function(){
 	//回复
 	$('.hui').live("click",function(){
 		if($(this).hasClass('huied')){
+			$(this).parent().next().hide();
+			$(this).parent().next().next().hide();
+			$(this).removeClass('huied')
 			return;
 		}
+		$(this).addClass('huied')
 		var comment_id = $(this).parent().attr('comment_id');
 		var reg=/\d+/;
 		if(!reg.test(comment_id)){
@@ -249,7 +253,7 @@ $(function(){
 		var likeStr = $(this).text();
 		var likeString = likeStr.replace("(",'').replace(")","").replace("回复","");
 		$(this).parent().next().show();
-		if(parseInt(likeString) > 0){
+		if(parseInt(likeString) > 0 && !$(this).hasClass('loaded')){
 			$.ajax({
 				url:url,
 				type:"POST",
@@ -258,11 +262,16 @@ $(function(){
 				success:function(res){
 					if(res.status){
 						$(This).parent().parent().append(res.data);
+						$(This).addClass("loaded");
 					}
 				}
 			});
 		}
+		if(parseInt(likeString) > 0 && $(this).hasClass('loaded')){
+			$(this).parent().next().next().show();
+		}
 	});
+	//发表评论的评论
 	$(".user_comment_form").find('button').live('click',function(){
 		if($(this).hasClass('replaied')){return;}
 		var content = $(this).parent().prev().val();
@@ -303,6 +312,33 @@ $(function(){
 			}
 		});
 	})
+	//加载更多
+	$(".comment_more").click(function(){
+		if($(this).hasClass("removeLoading")){
+			return;
+		}
+		$(this).addClass("removeLoading");
+		var id = $(this).attr('vid');
+		var page = $(this).attr('page');
+		page = parseInt(page) + 1;
+		var moreUrl = "/vcourse/comment/moreList";
+		var This = this;
+		$.ajax({
+			url:moreUrl,
+			type:"POST",
+			data:{"id":id,"page":page},
+			dataType:"JSON",
+			success:function(res){
+				if(res.status){
+					$(This).removeClass("removeLoading");
+					$(This).prev().append(res.data);
+					$(This).attr('page',page)
+				}else{
+					$(This).remove();
+				}
+			}
+		});
+	});
 })
 
 function verification(obj){

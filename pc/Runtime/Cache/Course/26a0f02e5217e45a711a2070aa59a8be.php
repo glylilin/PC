@@ -112,146 +112,52 @@
 		</div>
 	</div>
 </div>
-<dl class="vcourse_pay_box">
-	<dt><p>购买课程</p><a class="close"><img src="/Public/static/common/images/close.png"></a></dt>
-	<dd>
-		<div class="pic">
-			<p class="left"><img src="<?php echo ($data["self"]["path"]); ?>" alt=""/></p>
-			<p class="right">
-				<span class="tt">恋爱魔方</span>
-				<span class="time">课时：<?php echo ($data["self"]["time"]); ?></span>
-				<span class="price">￥<b>1999</b></span>
-			</p>
-		</div>
-		<div class="btn">
-			<form action="pay.php">
-				<p class="left"><label><input type="checkbox" name="">同意</label><a href="#">《浪迹教育用户服务协议》</a></p>
-				<P class="right"><span class="cancel">取消</span><button>去支付</button></p>
-			</form>
-		</div>
-	</dd>
-</dl>
+<div class="vcourse_nav fullWidth">
+	<ul>
+		<li><a href="#">恋爱秘籍</a></li>
+		<li><a href="#">私教</a></li>
+		<li><a href="#">挽回狙击</a></li>
+		<li><a href="#">实战</a></li>
+		<li><a href="#">全托</a></li>
+		<li><a href="#">精品课</a></li>
+	</ul>
+</div>
+<div class="vcourse_banner fullWidth">
+<?php if(is_array($banner)): foreach($banner as $key=>$id): ?><a href="#" title=""><img src="<?php echo ($id["path"]); ?>" alt=""></a><?php endforeach; endif; ?>
+</div>
 <div class="bodyauto">
-	<dl class="vcourse_intro fullWidth">
-		<dt><img src="<?php echo ($data["self"]["path"]); ?>"></dt>
+	<dl class="vcourse_tuijian fullWidth">
+		<dt>推荐课程<img src="/Public/static/course/images/jiao1.png"></dt>
 		<dd>
-			<div class="tt"><h2><?php echo ($data["self"]["title"]); ?></h2><span><?php echo ($data["self"]["time"]); ?></span></div>
-			<div class="people"><span><img src="/Public/static/course/images/zan1.png"><?php echo ($data["self"]["like"]); ?></span><span><img src="/Public/static/course/images/people.png"><?php echo ($data["self"]["number"]); ?></span></div>
-			<div class="intro">
-				<span>本课程适合人群：</span><p><?php echo ($data["self"]["summary"]); ?></p>
-			</div>
-			<div class="price">￥<span><?php echo ($data["self"]["price"]); ?></span></div>
-			<div class="buy"><a class="btn">购买课程</a><a href="#" target="_blank">咨询</a></div>
-			<div class="share">
-				<span>分享到：</span>
-				<div class="bdsharebuttonbox">
-				<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-				<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-				<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-				<a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-				</div>
-				<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{}};
-				with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-			</div>
+		<?php if(is_array($remmend)): foreach($remmend as $key=>$id): ?><a href="#"><?php echo ($id["title"]); ?></a><?php endforeach; endif; ?>
 		</dd>
 	</dl>
-
-	<div class="body_right">
-		<div class="whiteBg fullWidth2">
-			<!-- <dl class="vcourse_daoshi">
-				<dt>课程主讲导师</dt>
-				<dd>
-					<div class="name">
-						<span><img src="/Public/static/course/images/mentor1.jpg" alt=""></span>
-						<p><label>大尧 Mr. Yao</label>实名认证导师</p>
-					</div>
-					<div class="con">《简爱》创始人，《大尧秀》主持人，《话术红宝书》联合作者，澳洲海归，前职业魔术师，思维天马行空的顶级话术艺术家</div>
-				</dd>
-			</dl> -->
-
-			<dl class="vcourse_right_like">
-				<dt>你可能感兴趣的课程</dt>
-				<dd>
-					<ul class="vcourse_list1 fullWidth2">
-						<li class="li2">
-							<div class="box">
-								<div class="pic">
-									<a href="#" title="">
-										<img originalsrc="/Public/static/course/images/001.jpg" alt="" class="lazy">
-										<p><span>传奇PUA魔卡</span><label>2579人已学</label></p>
-									</a>
-								</div>
-								<p class="tt"><span>恋爱方法</span><label>课时1节</label></p>
-								<p class="price">￥<b>18000</b>/VIP2:￥17000</p>
-							</div>
-						</li>
-						<li class="li2">
-							<div class="box">
-								<div class="pic">
-									<a href="#" title="">
-										<img originalsrc="/Public/static/course/images/001.jpg" alt="" class="lazy">
-										<p><span>传奇PUA魔卡</span><label>2579人已学</label></p>
-									</a>
-								</div>
-								<p class="tt"><span>恋爱方法</span><label>课时1节</label></p>
-								<p class="price">￥<b>18000</b>/VIP2:￥17000</p>
-							</div>
-						</li>
-					</ul>
-				</dd>
-			</dl>
-
-		</div>
-		<dl class="app_download fullWidth2">
-			<dt><b>浪迹教育APP</b>从屌丝蜕变男神神器</dt>
-			<dd>
-				<span><img src="/Public/static/common/images/app_download.jpg"></span>
-				<p><img src="/Public/static/common/images/app_logo.png">扫码下载</p>
-				<label><img src="/Public/static/common/images/icon1.png"></label>
-			</dd>
-		</dl>
-	</div>
-
-	<div class="body_left whiteBg">
-		<div class="vcourse_left_title"><span class="current"><?php if($data['self']['type'] == 1 ): ?>套餐介绍 <?php else: ?>课程介绍<?php endif; ?></span><span>评论</span></div>
-		<div class="vcourse_tab fullWidth2">
-			<div class="vcourse_con">
-				<!-- <?php echo ($data["self"]["title"]); ?>：<br/> -->
-				<?php echo (formatImageHtmlContent($data["self"]["content"])); ?>
-			</div>
-			<?php if($data['self']['type'] == 1 ): ?><ul class="vcourse_list1 fullWidth2">
-			<?php if(is_array($data["child"])): foreach($data["child"] as $key=>$id): ?><li class="li3">
+<?php if(is_array($data)): foreach($data as $key=>$id): ?><dl class="vcourse_classify fullWidth">
+		<dt>
+			<p class="left"><span><?php echo ($id["name"]); ?></span><?php echo ($id["brief"]); ?></p>
+			<p class="right"><a href="/vcourse/entry/<?php echo ($id["type"]); ?>">更多<i>&gt;</i></a></p>
+		</dt>
+		<dd>
+			<ul class="vcourse_list1 fullWidth">
+			<?php if(is_array($id["child"])): foreach($id["child"] as $keys=>$v): if($keys < 4): ?><li>
 					<div class="box">
 						<div class="pic">
-							<a href="#" title="">
-								<img originalsrc="<?php echo ($id["thumbpath"]); ?>" alt="" class="lazy">
-								<p><span></span><label><?php echo ($id["number"]); ?>人已学</label></p>
+							<a href="/vcourse/entry/<?php echo ($id["type"]); ?>/<?php echo ($v["id"]); ?>" title="">
+								<img originalsrc="<?php echo ($v["thumbpath"]); ?>" src="/Public/static/common/images/defaultpic.gif" alt="" class="lazy">
+								<p><span></span><label><?php echo ($v["number"]); ?>人已学</label></p>
 							</a>
 						</div>
-						<p class="tt"><span><?php echo ($id["title"]); ?></span><label>课时<?php echo ($id["lesson"]); ?>节</label></p>
+						<p class="tt"><span><?php echo ($v["title"]); ?></span><label>课时<?php echo ($v["lesson"]); ?>节</label></p>
+						<p class="price">￥<b><?php echo ($v["price"]); ?></b>/VIP2:￥<?php echo ($v["vip_price"]); ?></p>
 					</div>
-				</li><?php endforeach; endif; ?>
-			</ul><?php endif; ?>
-		</div>
-		<div class="vcourse_tab" style="display:none;">
-			<dl class="comment_form" vid="<?php echo ($data["self"]["id"]); ?>">
-				<!-- <dt>网友评论</dt> -->
-				<dd>
-					
-						<textarea placeholder="文明上网理性发言，请遵守新闻评论服务协议" class="comment_content"></textarea>
-						<p><button class="submitComment">提交</button></p>
+				</li><?php endif; endforeach; endif; ?>
 				
-				</dd>
-			</dl>
-			<dl class="comment_list">
-				<dt>全部评论<img src="/Public/static/common/images/comment.png"/><span><?php echo ($data["self"]["comment"]); ?></span></dt>
-				<?php if($comments['status']): if(is_array($comments["data"])): foreach($comments["data"] as $key=>$id): ?><dd>
-				<?=W('Comment/item',array($id))?>
-				</dd><?php endforeach; endif; endif; ?>
-			</dl>
-			<?php if($comments['data']): ?><div class="comment_more" vid="<?php echo ($data["self"]["id"]); ?>"  page='1'><a>加载更多</a></div><?php endif; ?>
-		</div>
-	</div>
+			</ul>
+		</dd>
+	</dl><?php endforeach; endif; ?>
+
+	</dl>
+
 </div>
 
 <div class="bodyauto">

@@ -1,14 +1,14 @@
 <?php
 return array(
-    'DB_TYPE'               =>  'mysql',     // 数据库类型
-    'DB_HOST'               =>  'localhost', // 服务器地址
-    'DB_NAME'               =>  'app',          // 数据库名
-    'DB_USER'               =>  'root',      // 用户名
-    'DB_PWD'                =>  'admin',          // 密码
-    'DB_PORT'               =>  '3306',        // 端口
-    'DB_PREFIX'             =>  'dna_',    // 数据库表前缀
-    'DB_PARAMS'          	=>  array(), // 数据库连接参数
-    'DB_DEBUG'  			=>  TRUE, // 数据库调试模式 开启后可以记录SQL日志
-    'DB_FIELDS_CACHE'       =>  true,        // 启用字段缓存
-    'DB_CHARSET'            =>  'utf8',      // 数据库编码默认采用utf8
+    'DB_TYPE'               =>  'mysql',     // 鏁版嵁搴撶被鍨�
+    'DB_HOST'               =>  'localhost', // 鏈嶅姟鍣ㄥ湴鍧�
+    'DB_NAME'               =>  'langji_app',          // 鏁版嵁搴撳悕
+    'DB_USER'               =>  'root',      // 鐢ㄦ埛鍚�
+    'DB_PWD'                =>  'admin',          // 瀵嗙爜
+    'DB_PORT'               =>  '3306',        // 绔彛
+    'DB_PREFIX'             =>  'dna_',    // 鏁版嵁搴撹〃鍓嶇紑
+    'DB_PARAMS'          	=>  array(), // 鏁版嵁搴撹繛鎺ュ弬鏁�
+    'DB_DEBUG'  			=>  TRUE, // 鏁版嵁搴撹皟璇曟ā寮�寮�惎鍚庡彲浠ヨ褰昐QL鏃ュ織
+    'DB_FIELDS_CACHE'       =>  true,        // 鍚敤瀛楁缂撳瓨
+    'DB_CHARSET'            =>  'utf8',      // 鏁版嵁搴撶紪鐮侀粯璁ら噰鐢╱tf8
 );

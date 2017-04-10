@@ -113,13 +113,13 @@
 	</div>
 </div>
 <dl class="vcourse_pay_box">
-	<dt><p>购买课程</p><a class="close"><img src="/Public/static/common/images/close.png"></a></dt>
+	<dt><p>购买课程</p><a class="close"><img src="../new_img/close.png"></a></dt>
 	<dd>
 		<div class="pic">
-			<p class="left"><img src="<?php echo ($data["self"]["path"]); ?>" alt=""/></p>
+			<p class="left"><img src="img/banner1.jpg" alt=""/></p>
 			<p class="right">
 				<span class="tt">恋爱魔方</span>
-				<span class="time">课时：<?php echo ($data["self"]["time"]); ?></span>
+				<span class="time">课时：200小时+</span>
 				<span class="price">￥<b>1999</b></span>
 			</p>
 		</div>
@@ -131,25 +131,21 @@
 		</div>
 	</dd>
 </dl>
+
 <div class="bodyauto">
 	<dl class="vcourse_intro fullWidth">
-		<dt><img src="<?php echo ($data["self"]["path"]); ?>"></dt>
+		<dt><img src="img/banner1.jpg"></dt>
 		<dd>
-			<div class="tt"><h2><?php echo ($data["self"]["title"]); ?></h2><span><?php echo ($data["self"]["time"]); ?></span></div>
-			<div class="people"><span><img src="/Public/static/course/images/zan1.png"><?php echo ($data["self"]["like"]); ?></span><span><img src="/Public/static/course/images/people.png"><?php echo ($data["self"]["number"]); ?></span></div>
+			<div class="tt"><h2>恋爱魔方</h2><span>200小时+</span></div>
+			<div class="people"><span><img src="img/zan1.png">157</span><span><img src="img/people.png">1157</span></div>
 			<div class="intro">
-				<span>本课程适合人群：</span><p><?php echo ($data["self"]["summary"]); ?></p>
+				<span>本课程适合人群：</span><p>适合在爱情方面的小白,给你一个正确的恋爱观,对爱情有一个正确的了解,资料随时观看下载,24小时答疑,自定学习时间</p>
 			</div>
-			<div class="price">￥<span><?php echo ($data["self"]["price"]); ?></span></div>
+			<div class="price">￥<span>1980</span></div>
 			<div class="buy"><a class="btn">购买课程</a><a href="#" target="_blank">咨询</a></div>
 			<div class="share">
 				<span>分享到：</span>
-				<div class="bdsharebuttonbox">
-				<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-				<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-				<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-				<a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-				</div>
+				<div class="bdsharebuttonbox"><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a></div>
 				<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{}};
 				with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 			</div>
@@ -158,16 +154,16 @@
 
 	<div class="body_right">
 		<div class="whiteBg fullWidth2">
-			<!-- <dl class="vcourse_daoshi">
+			<dl class="vcourse_daoshi">
 				<dt>课程主讲导师</dt>
 				<dd>
 					<div class="name">
-						<span><img src="/Public/static/course/images/mentor1.jpg" alt=""></span>
+						<span><img src="img/mentor1.jpg" alt=""></span>
 						<p><label>大尧 Mr. Yao</label>实名认证导师</p>
 					</div>
 					<div class="con">《简爱》创始人，《大尧秀》主持人，《话术红宝书》联合作者，澳洲海归，前职业魔术师，思维天马行空的顶级话术艺术家</div>
 				</dd>
-			</dl> -->
+			</dl>
 
 			<dl class="vcourse_right_like">
 				<dt>你可能感兴趣的课程</dt>
@@ -177,7 +173,7 @@
 							<div class="box">
 								<div class="pic">
 									<a href="#" title="">
-										<img originalsrc="/Public/static/course/images/001.jpg" alt="" class="lazy">
+										<img src="img/001.jpg" alt="">
 										<p><span>传奇PUA魔卡</span><label>2579人已学</label></p>
 									</a>
 								</div>
@@ -189,7 +185,7 @@
 							<div class="box">
 								<div class="pic">
 									<a href="#" title="">
-										<img originalsrc="/Public/static/course/images/001.jpg" alt="" class="lazy">
+										<img src="img/001.jpg" alt="">
 										<p><span>传奇PUA魔卡</span><label>2579人已学</label></p>
 									</a>
 								</div>
@@ -205,51 +201,108 @@
 		<dl class="app_download fullWidth2">
 			<dt><b>浪迹教育APP</b>从屌丝蜕变男神神器</dt>
 			<dd>
-				<span><img src="/Public/static/common/images/app_download.jpg"></span>
-				<p><img src="/Public/static/common/images/app_logo.png">扫码下载</p>
-				<label><img src="/Public/static/common/images/icon1.png"></label>
+				<span><img src="../new_img/app_download.jpg"></span>
+				<p><img src="../new_img/app_logo.png">扫码下载</p>
+				<label><img src="../new_img/icon1.png"></label>
 			</dd>
 		</dl>
 	</div>
 
 	<div class="body_left whiteBg">
-		<div class="vcourse_left_title"><span class="current"><?php if($data['self']['type'] == 1 ): ?>套餐介绍 <?php else: ?>课程介绍<?php endif; ?></span><span>评论</span></div>
+		<div class="vcourse_left_title"><span class="current">课程介绍</span><span>评论</span></div>
 		<div class="vcourse_tab fullWidth2">
 			<div class="vcourse_con">
-				<!-- <?php echo ($data["self"]["title"]); ?>：<br/> -->
-				<?php echo (formatImageHtmlContent($data["self"]["content"])); ?>
+				<img src="img/11.png">
 			</div>
-			<?php if($data['self']['type'] == 1 ): ?><ul class="vcourse_list1 fullWidth2">
-			<?php if(is_array($data["child"])): foreach($data["child"] as $key=>$id): ?><li class="li3">
-					<div class="box">
-						<div class="pic">
-							<a href="#" title="">
-								<img originalsrc="<?php echo ($id["thumbpath"]); ?>" alt="" class="lazy">
-								<p><span></span><label><?php echo ($id["number"]); ?>人已学</label></p>
-							</a>
-						</div>
-						<p class="tt"><span><?php echo ($id["title"]); ?></span><label>课时<?php echo ($id["lesson"]); ?>节</label></p>
-					</div>
-				</li><?php endforeach; endif; ?>
-			</ul><?php endif; ?>
 		</div>
 		<div class="vcourse_tab" style="display:none;">
-			<dl class="comment_form" vid="<?php echo ($data["self"]["id"]); ?>">
+			<dl class="comment_form">
 				<!-- <dt>网友评论</dt> -->
 				<dd>
-					
-						<textarea placeholder="文明上网理性发言，请遵守新闻评论服务协议" class="comment_content"></textarea>
-						<p><button class="submitComment">提交</button></p>
-				
+					<form action="#">
+						<textarea placeholder="文明上网理性发言，请遵守新闻评论服务协议"></textarea>
+						<p><button>提交</button></p>
+					</form>
 				</dd>
 			</dl>
 			<dl class="comment_list">
-				<dt>全部评论<img src="/Public/static/common/images/comment.png"/><span><?php echo ($data["self"]["comment"]); ?></span></dt>
-				<?php if($comments['status']): if(is_array($comments["data"])): foreach($comments["data"] as $key=>$id): ?><dd>
-				<?=W('Comment/item',array($id))?>
-				</dd><?php endforeach; endif; endif; ?>
+				<dt>全部评论<img src="../new_img/comment.png"/><span>5</span></dt>
+				<dd>
+					<div class="comment_list_one">
+						<div class="user_portrait"><img src="../new_img/11.png" alt=""></div>
+						<div class="user_comment">
+							<p class="user_comment_name">葬爱家族<span>1分钟前</span></p>
+							<p class="user_comment_con">真正的好贵，买不起，买个假的先充个胖子，真的蓝色妖姬在实验室里，市场上卖的都知道是假的，真的你买不起。</p>
+							<p class="user_comment_icon"><span class="zan"><img src="../new_img/hand.png">(2)</span><span class="hui"><img src="../new_img/back.png">回复(2)</span></p>
+							<form action="#" class="user_comment_form">
+								<textarea placeholder="回复：XXXX"></textarea>
+								<span><button>回复</button></span>	
+							</form>
+							<!--回复列表start-->
+							<div class="comment_list_one">
+								<div class="user_portrait"><img src="../new_img/11.png" alt=""></div>
+								<div class="user_comment">
+									<p class="user_comment_name">葬爱家族<span>1分钟前</span></p>
+									<p class="user_comment_con">真正的好贵，买不起，买个假的先充个胖子，真的蓝色妖姬在实验室里，市场上卖的都知道是假的，真的你买不起。</p>
+									<p class="user_comment_icon"><span class="zan"><img src="../new_img/hand.png">(2)</span><span class="hui"><img src="../new_img/back.png">回复(2)</span></p>
+									<form action="#" class="user_comment_form">
+										<textarea placeholder="回复：XXXX"></textarea>
+										<span><button>回复</button></span>	
+									</form>
+
+									<!--回复列表start-->
+									<div class="comment_list_one">
+										<div class="user_portrait"><img src="../new_img/11.png" alt=""></div>
+										<div class="user_comment">
+											<p class="user_comment_name">葬爱家族<span>1分钟前</span></p>
+											<p class="user_comment_con">真正的好贵，买不起，买个假的先充个胖子，真的蓝色妖姬在实验室里，市场上卖的都知道是假的，真的你买不起。</p>
+											<p class="user_comment_icon"><span class="zan"><img src="../new_img/hand.png">(2)</span><span class="hui"><img src="../new_img/back.png">回复(2)</span></p>
+										</div>
+									</div>
+									<div class="comment_list_one">
+										<div class="user_portrait"><img src="../new_img/11.png" alt=""></div>
+										<div class="user_comment">
+											<p class="user_comment_name">葬爱家族<span>1分钟前</span></p>
+											<p class="user_comment_con">真正的好贵，买不起，买个假的先充个胖子，真的蓝色妖姬在实验室里，市场上卖的都知道是假的，真的你买不起。</p>
+											<p class="user_comment_icon"><span class="zan"><img src="../new_img/hand.png">(2)</span><span class="hui"><img src="../new_img/back.png">回复(2)</span></p>
+										</div>
+									</div>
+									<!--回复列表end-->
+
+								</div>
+							</div>
+							<div class="comment_list_one">
+								<div class="user_portrait"><img src="../new_img/11.png" alt=""></div>
+								<div class="user_comment">
+									<p class="user_comment_name">葬爱家族<span>1分钟前</span></p>
+									<p class="user_comment_con">真正的好贵，买不起，买个假的先充个胖子，真的蓝色妖姬在实验室里，市场上卖的都知道是假的，真的你买不起。</p>
+									<p class="user_comment_icon"><span class="zan"><img src="../new_img/hand.png">(2)</span><span class="hui"><img src="../new_img/back.png">回复(2)</span></p>
+									<form action="#" class="user_comment_form">
+										<textarea placeholder="回复：XXXX"></textarea>
+										<span><button>回复</button></span>	
+									</form>
+								</div>
+							</div>
+							<!--回复列表end-->
+						</div>
+					</div>
+				</dd>
+				<dd>
+					<div class="comment_list_one">
+						<div class="user_portrait"><img src="../new_img/11.png" alt=""></div>
+						<div class="user_comment">
+							<p class="user_comment_name">葬爱家族<span>1分钟前</span></p>
+							<p class="user_comment_con">真正的好贵，买不起，买个假的先充个胖子，真的蓝色妖姬在实验室里，市场上卖的都知道是假的，真的你买不起。</p>
+							<p class="user_comment_icon"><span class="zan"><img src="../new_img/hand.png">(2)</span><span class="hui"><img src="../new_img/back.png">回复(2)</span></p>
+							<form action="#" class="user_comment_form">
+								<textarea placeholder="回复：XXXX"></textarea>
+								<span><button>回复</button></span>	
+							</form>
+						</div>
+					</div>
+				</dd>
 			</dl>
-			<?php if($comments['data']): ?><div class="comment_more" vid="<?php echo ($data["self"]["id"]); ?>"  page='1'><a>加载更多</a></div><?php endif; ?>
+			<div class="comment_more"><a href="#">加载更多</a></div>
 		</div>
 	</div>
 </div>
