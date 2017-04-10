@@ -3,7 +3,6 @@ namespace Course\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-      
        $course_service =  D("Course","Service");
        $data = $course_service->getCourseListService();
        $banner = $course_service->getTopCourseService();
@@ -41,6 +40,19 @@ class IndexController extends Controller {
     	$this->assign('comments',$comment_list);
     	$this->display("group");
     	
+    }
+    /**
+     * 视频播放详情
+     */
+    public function view(){
+    	$cid = I("get.cid",0,'intval');
+    	$course_service = D("Course","Service");
+    	$course_video_service = D("CourseVideo","Service");
+    	$course_info = $course_service->getCourseExistByidService($cid);
+    	$video_list_info = $course_video_service->getVideoListByCourseIdService($cid);
+    	$this->assign('course_info',$course_info);
+    	$this->assign('video_list_info',$video_list_info);
+    	$this->display();
     }
     
    

@@ -71,5 +71,18 @@ class CourseService extends Model{
     	}
     	return $result;
     }
+    /**
+     * 判断课程是否存在
+     * @param unknown $id
+     */
+    public function getCourseExistByidService($id){
+    	$course_logic = D("Course",'Logic');
+    	$result = $course_logic->getCourseExistByidLogic($id);
+    	if(!$result){
+    		throw new \Exception(L("COURSE_DOES_NOT_EXIST"),HttpStatus::NOT_FUND,null);
+    	}
+    	return $result;
+    	
+    }
     
 }

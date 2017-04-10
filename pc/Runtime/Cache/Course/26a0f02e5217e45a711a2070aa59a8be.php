@@ -44,9 +44,9 @@
 </dl><dl class="header bodyauto">
 	<dt>浪迹PUA实战泡妞把妹社区 - 浪迹教育</dt>
 	<dd>
-		<p class="user_name">你好，<a href="#"><?php echo 狂?></a>我的课程</p>
 		<p><img src="/Public/static/common/images/yanzhen.png" class="img1" />验证官方微信<img src="/Public/static/common/images/xiajiantou.png"  class="img2" /></p>
 		<p><a href="#">手机版</a></p>
+		<p class="user_entrance"><a class="denglu">登陆</a>|<a class="zhuce">注册</a></p>
 	</dd>
 </dl>
 <div class="nav fullWidth">
@@ -142,10 +142,15 @@
 			<?php if(is_array($id["child"])): foreach($id["child"] as $keys=>$v): if($keys < 4): ?><li>
 					<div class="box">
 						<div class="pic">
-							<a href="/vcourse/entry/<?php echo ($id["type"]); ?>/<?php echo ($v["id"]); ?>" title="">
+							<?php if($v['type'] != 2): ?><a href="/vcourse/entry/<?php echo ($id["type"]); ?>/<?php echo ($v["id"]); ?>" title="">
 								<img originalsrc="<?php echo ($v["thumbpath"]); ?>" src="/Public/static/common/images/defaultpic.gif" alt="" class="lazy">
 								<p><span></span><label><?php echo ($v["number"]); ?>人已学</label></p>
 							</a>
+							<?php else: ?>
+							<a href="/vcourse/view/<?php echo ($v["id"]); ?>" title="">
+								<img originalsrc="<?php echo ($v["thumbpath"]); ?>" src="/Public/static/common/images/defaultpic.gif" alt="" class="lazy">
+								<p><span></span><label><?php echo ($v["number"]); ?>人已学</label></p>
+							</a><?php endif; ?>
 						</div>
 						<p class="tt"><span><?php echo ($v["title"]); ?></span><label>课时<?php echo ($v["lesson"]); ?>节</label></p>
 						<p class="price">￥<b><?php echo ($v["price"]); ?></b>/VIP2:￥<?php echo ($v["vip_price"]); ?></p>

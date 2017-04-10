@@ -35,10 +35,17 @@
 				<li>
 					<div class="box">
 						<div class="pic">
+							<if condition="$v['type'] neq 2">
 							<a href="/vcourse/entry/<{$id.type}>/<{$v.id}>" title="">
 								<img originalsrc="<{$v.thumbpath}>" src="__IMAGES__/defaultpic.gif" alt="" class="lazy">
 								<p><span></span><label><{$v.number}>人已学</label></p>
 							</a>
+							<else/>
+							<a href="/vcourse/view/<{$v.id}>" title="">
+								<img originalsrc="<{$v.thumbpath}>" src="__IMAGES__/defaultpic.gif" alt="" class="lazy">
+								<p><span></span><label><{$v.number}>人已学</label></p>
+							</a>
+							</if>
 						</div>
 						<p class="tt"><span><{$v.title}></span><label>课时<{$v.lesson}>节</label></p>
 						<p class="price">￥<b><{$v.price}></b>/VIP2:￥<{$v.vip_price}></p>

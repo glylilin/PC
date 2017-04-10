@@ -5150,3 +5150,2431 @@ INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001104s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.001811s ]
 SQL: SELECT Comment.id AS id,Comment.user_id AS user_id,Comment.type AS type,Comment.rel_id AS rel_id,Comment.comment_uid AS comment_uid,Comment.comment_id AS comment_id,Comment.add_time AS add_time,Comment.like AS commlike,Comment.number AS number,Comment.content AS content,User.avatar_id AS avatar_id,User.nickname AS nickname,User.mobile AS mobile,User.id AS uid FROM dna_comment Comment  JOIN dna_user User ON Comment.user_id = User.id WHERE ( `Comment`.`display`=1 and `Comment`.`delete`=0 and rel_id=10018 and Comment.type = 2 ) ORDER BY Comment.add_time desc LIMIT 15,15   [ RunTime:0.0014s ]
 
+[ 2017-04-10T22:14:07+08:00 ] 127.0.0.1 /vcourse/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.084004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.052003s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.172010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.225013s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and type!=0 ) ORDER BY `sort` = 0, `sort` ASC, `id` ASC  [ RunTime:0.4190s ]
+SQL: SELECT * FROM `dna_attach` WHERE ( display=1 and `delete`=0 and id in (69878,69879,62745,62749,43869,62848,22512,22533,62773,22538,43875,22539,22541,22350,22545,22569,47944,22549,22575,65172,24131,22356,22357,22358,43455,22360,24254,43876,43863,18389,22634,43866,22639,22643,24252,43456) )  [ RunTime:0.3370s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and top =1  ) ORDER BY `sort` = 0, `sort` ASC, `id` ASC  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `dna_attach` WHERE ( display=1 and `delete`=0 and id in (22623,35064,69878,69879,62745,62749,43869,22512,24254,10752,43863) )  [ RunTime:0.0390s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and type!=0 and recommend =1 ) ORDER BY `sort` = 0, `sort` ASC, `id` ASC  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `dna_attach` WHERE ( display=1 and `delete`=0 and id in (69878,69879) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.033002s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.034002s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\26a0f02e5217e45a711a2070aa59a8be.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.596034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.596034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.030002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.033002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.033002s ]
+
+[ 2017-04-10T22:14:08+08:00 ] 127.0.0.1 /vcourse/Public/static/common/images/defaultpic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T22:14:08+08:00 ] 127.0.0.1 /vcourse/Public/static/common/images/defaultpic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T22:14:12+08:00 ] 127.0.0.1 /vcourse/entry/5/10128
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10128 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `dna_attach` WHERE ( display=1 and `delete`=0 and id=24252 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT Comment.id AS id,Comment.user_id AS user_id,Comment.type AS type,Comment.rel_id AS rel_id,Comment.comment_uid AS comment_uid,Comment.comment_id AS comment_id,Comment.add_time AS add_time,Comment.like AS commlike,Comment.number AS number,Comment.content AS content,User.avatar_id AS avatar_id,User.nickname AS nickname,User.mobile AS mobile,User.id AS uid FROM dna_comment Comment  JOIN dna_user User ON Comment.user_id = User.id WHERE ( `Comment`.`display`=1 and `Comment`.`delete`=0 and rel_id=10128 and Comment.type = 2 ) ORDER BY Comment.add_time desc LIMIT 0,15   [ RunTime:0.1400s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\4734d4d414e1c63e8cc8378bd2b7633b.php 第 60 行.
+NOTIC: [8] Undefined index: data D:\wamp\www\PC\pc\Runtime\Cache\Course\4734d4d414e1c63e8cc8378bd2b7633b.php 第 252 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T22:14:12+08:00 ] 127.0.0.1 /vcourse/entry/5/Public/static/common/images/load.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SELECT * FROM `dna_course` WHERE ( display=1 and `delete`=0 and type =5 ) ORDER BY `sort` = 0, `sort` ASC, `id` ASC  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `dna_attach` WHERE ( display=1 and `delete`=0 and id in (24254,24252) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\28756b14e210a9520c27c7553b1764b9.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T22:19:29+08:00 ] 127.0.0.1 /vcourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and type!=0 ) ORDER BY `sort` = 0, `sort` ASC, `id` ASC  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `dna_attach` WHERE ( display=1 and `delete`=0 and id in (69878,69879,62745,62749,43869,62848,22512,22533,62773,22538,43875,22539,22541,22350,22545,22569,47944,22549,22575,65172,24131,22356,22357,22358,43455,22360,24254,43876,43863,18389,22634,43866,22639,22643,24252,43456) )  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and top =1  ) ORDER BY `sort` = 0, `sort` ASC, `id` ASC  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `dna_attach` WHERE ( display=1 and `delete`=0 and id in (22623,35064,69878,69879,62745,62749,43869,22512,24254,10752,43863) )  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and type!=0 and recommend =1 ) ORDER BY `sort` = 0, `sort` ASC, `id` ASC  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `dna_attach` WHERE ( display=1 and `delete`=0 and id in (69878,69879) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\26a0f02e5217e45a711a2070aa59a8be.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:18:33+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `dna_course_video` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: 课程不存在
+
+[ 2017-04-10T23:18:51+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 0 ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: 课程不存在
+
+[ 2017-04-10T23:19:25+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: vid D:\wamp\www\PC\pc\Course\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: Think\Model:getVideoListByCourseIdService方法不存在！
+
+[ 2017-04-10T23:20:07+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: vid D:\wamp\www\PC\pc\Course\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: Think\Model:getVideoListByCourseIdService方法不存在！
+
+[ 2017-04-10T23:20:08+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: vid D:\wamp\www\PC\pc\Course\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: Think\Model:getVideoListByCourseIdService方法不存在！
+
+[ 2017-04-10T23:20:36+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: vid D:\wamp\www\PC\pc\Course\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: Think\Model:getVideoListByCourseIdService方法不存在！
+
+[ 2017-04-10T23:20:36+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: vid D:\wamp\www\PC\pc\Course\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: Think\Model:getVideoListByCourseIdService方法不存在！
+
+[ 2017-04-10T23:20:37+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: vid D:\wamp\www\PC\pc\Course\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: Think\Model:getVideoListByCourseIdService方法不存在！
+
+[ 2017-04-10T23:20:37+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: vid D:\wamp\www\PC\pc\Course\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: Think\Model:getVideoListByCourseIdService方法不存在！
+
+[ 2017-04-10T23:20:37+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: vid D:\wamp\www\PC\pc\Course\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: Think\Model:getVideoListByCourseIdService方法不存在！
+
+[ 2017-04-10T23:20:37+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8] Undefined variable: vid D:\wamp\www\PC\pc\Course\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0000s ]
+ERR: Think\Model:getVideoListByCourseIdService方法不存在！
+
+[ 2017-04-10T23:20:37+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: vid D:\wamp\www\PC\pc\Course\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: Think\Model:getVideoListByCourseIdService方法不存在！
+
+[ 2017-04-10T23:21:55+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined variable: vid D:\wamp\www\PC\pc\Course\Controller\IndexController.class.php 第 50 行.
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+
+[ 2017-04-10T23:23:54+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/new_img/close.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/view/img/player_icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/view/img/zan1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.026001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027001s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/view/img/people.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/view/img/banner1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.005000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:26:43+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/view/img/player_icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:28:56+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:42:34+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:42:35+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:42:35+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:42:35+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:46:01+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:46:01+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:46:01+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:46:02+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-10T23:46:02+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:46:02+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:46:02+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:46:02+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:46:02+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:46:02+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:46:02+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:46:02+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+NOTIC: [8] Undefined index: title D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 171 行.
+NOTIC: [8] Undefined index: video_time D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 172 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.033002s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:04+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:48:43+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009001s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.011001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013001s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:49:24+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.009001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010001s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:49:36+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:30+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:30+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-10T23:50:30+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.010001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:50:30+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:50:30+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+
+[ 2017-04-10T23:50:30+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.007000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025001s ]
+
+[ 2017-04-10T23:50:30+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+
+[ 2017-04-10T23:50:30+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-04-10T23:50:30+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:50:30+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:30+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:31+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:50:31+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:50:31+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:50:31+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:50:31+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:31+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:50:31+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:50:31+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:31+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:50:31+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:50:42+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:51:39+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:51:40+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-10T23:51:40+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:51:40+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:51:40+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:51:40+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:54:23+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:54:23+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:54:23+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:54:23+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.009000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:54:23+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-10T23:54:23+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:54:23+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:54:23+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-04-10T23:54:23+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:54:23+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:54:23+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:54:23+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:54:23+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013001s ]
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.029002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.039002s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021001s ]
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:55:21+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:56:39+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:56:39+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:56:39+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:56:39+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-10T23:56:39+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:56:39+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:56:39+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:56:39+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:56:39+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:56:39+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:56:40+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:56:40+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:56:40+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:56:40+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:56:40+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:56:40+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-10T23:56:40+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-10T23:56:40+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:56:40+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:56:40+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-10T23:58:06+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:58:22+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:22+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:58:22+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:58:22+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:22+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:22+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:22+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-10T23:58:22+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:22+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:22+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:22+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-10T23:58:23+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:58:23+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:23+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:23+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-04-10T23:58:23+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:58:23+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:23+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:58:23+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:23+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:54+08:00 ] 127.0.0.1 /vcourse/view/10019
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 3 D:\wamp\www\PC\BaseCore\Library\Think\Route.class.php 第 249 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SELECT `id`,`type`,`title`,`user_id`,`course_id`,`image_id`,`time`,`price`,`vip_price`,`number`,`lesson`,`content`,`like`,`summary`,`comment` FROM `dna_course` WHERE ( display=1 and `delete`=0 and id = 10019 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] in_array() expects parameter 2 to be array, string given D:\wamp\www\PC\BaseCore\Library\Think\Model.class.php 第 652 行.
+SQL: SELECT `id`,`course_id`,`title`,`thumb_id`,`image_id`,`video_id`,`video_time`,`add_time` FROM `dna_course_video` WHERE ( display=1 and `delete`=0 and course_id = 10019 ) ORDER BY id ASC,sort ASC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: item D:\wamp\www\PC\BaseCore\Library\Think\Template\TagLib.class.php 第 100 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant vip - assumed 'vip' D:\wamp\www\PC\pc\Runtime\Cache\Course\1fcf478b46e4f602cbe722070ad12cf0.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/view/js/scroll.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: 无法加载控制器:View
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/view/img/001.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/view/img/mentor1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/new_img/app_logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/new_img/comment.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/new_img/icon1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/new_img/hand.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/new_img/app_download.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/new_img/11.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+
+[ 2017-04-10T23:58:55+08:00 ] 127.0.0.1 /vcourse/new_img/back.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-10T23:58:59+08:00 ] 127.0.0.1 /vcourse/comment/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+

@@ -44,9 +44,9 @@
 </dl><dl class="header bodyauto">
 	<dt>浪迹PUA实战泡妞把妹社区 - 浪迹教育</dt>
 	<dd>
-		<p class="user_name">你好，<a href="#"><?php echo 狂?></a>我的课程</p>
 		<p><img src="/Public/static/common/images/yanzhen.png" class="img1" />验证官方微信<img src="/Public/static/common/images/xiajiantou.png"  class="img2" /></p>
 		<p><a href="#">手机版</a></p>
+		<p class="user_entrance"><a class="denglu">登陆</a>|<a class="zhuce">注册</a></p>
 	</dd>
 </dl>
 <div class="nav fullWidth">

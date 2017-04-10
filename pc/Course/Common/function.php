@@ -56,4 +56,15 @@ function formatImageHtmlContent($html){
 	
     return $html;
 }
+
+function numberFormat($number){
+	if($number < 10){
+		$number = "0".$number;
+	}
+	return $number;
+}
+
+function briefContent($content){
+	return str_replace("适合人群：","",$content);
+}
 ?>

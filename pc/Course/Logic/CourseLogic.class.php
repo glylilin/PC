@@ -191,9 +191,7 @@ class CourseLogic extends Model{
      */
     public function getCourseExistByidLogic($id){
     	$course_model = D("Course");
-    	if($course_model->getCourseInfoById($id)){
-    		return true;
-    	}
-    	return false;
+    	$data = $course_model->getCourseInfoById($id);
+    	return $data;
     }
 }
