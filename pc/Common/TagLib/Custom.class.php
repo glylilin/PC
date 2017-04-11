@@ -4,7 +4,8 @@ use Think\Template\TagLib;
 class Custom extends TagLib{
     protected $tags = array(
         'Signin'=>array('close'=>0),
-        'Menu'=>array('attr'=>'name','close'=>0)
+        'Menu'=>array('attr'=>'name','close'=>0),
+        'Share'=>array('close'=>0),
     );
 //自定义登录标签
 public function _Signin(){
@@ -133,5 +134,22 @@ $nav = <<<CONTENT
 </div>
 CONTENT;
 return $nav;
+}
+
+public function _Share(){
+$share =<<<LABEL
+<div class="share">
+		<span>分享到：</span>
+		<div class="bdsharebuttonbox">
+		<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+		<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+		<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+		<a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+		</div>
+		<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{}};
+						with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</div>
+LABEL;
+return $share;			
 }
 }

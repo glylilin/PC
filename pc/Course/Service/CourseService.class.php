@@ -84,5 +84,14 @@ class CourseService extends Model{
     	return $result;
     	
     }
-    
+    /**
+     * 获取相关推荐规则为该视频的类别但不包含本身
+     * @param unknown $typeid
+     * @param unknown $cid
+     */
+    public function getRemmendCourseListService($typeid,$cid){
+        $course_logic = D("Course",'Logic');
+        $data = $course_logic->getRemmendCourseListLogic($typeid,$cid);
+        return $data;
+    }
 }

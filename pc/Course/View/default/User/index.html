@@ -1,0 +1,51 @@
+<div class="bodyauto">
+	<ul class="user_left">
+		<li class="current"><a href="/vcourse/user/">个人中心</a></li>
+		<li><a href="/vcourse/user/mycourse">我的课程</a></li>
+	</ul>
+	<div class="user_right">
+		<div class="user_right_title">设置</div>
+		<dl class="user_head">
+			<dt><p><img src="__IMAGES__/camera.png" class="myheader"><br>修改我的头像</p><img src="<{$userinfo.thumbpath}>" id="user_icon_avater"></dt>
+			<dd>
+				<p><label><{$userinfo.nickname}></label><span class="edit"><img src="__IMAGES__/pen.png">修改昵称</span></p>
+				<form>
+					<input type="text" value="<{$userinfo.nickname}>" rel="<{$userinfo.nickname}>"/>
+					<button class="updateName">修改</button>
+					<a class="cancel">取消</a>
+				</form>
+			</dd>
+		</dl>
+		<ul class="user_number">
+			<li>
+				<p>电话号码</p>
+				<div><{$userinfo.mobile}> (不可修改)</div>
+			</li>
+			<li>
+				<p>微信号</p>
+				<div>
+					<form>
+						<input type="text" value="<{$userinfo.weixin}>" rel="<{$userinfo.weixin}>" disabled="disabled" />
+						<button class='updateWechat'>确认修改</button>
+						<a class="cancel">取消</a>
+						<span class="edit"><img src="__IMAGES__/pen.png">修改微信</span>
+					</form>
+				</div>
+			</li>
+			<li>
+				<p>密码</p>
+				<div>
+					<form>
+						<input type="password" value="15475847769" rel="15475847769" disabled="disabled" />
+						<button class="updatePassword">确认修改</button>
+						<a class="cancel">取消</a>
+						<span class="edit"><img src="__IMAGES__/pen.png">修改密码</span>
+					</form>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<form id='file_upload' method='post' url="<?=$uploadUrl?>">
+	<input type='file' class="hidden_file" name='file' />
+</form>

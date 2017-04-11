@@ -44,9 +44,9 @@
 </dl><dl class="header bodyauto">
 	<dt>浪迹PUA实战泡妞把妹社区 - 浪迹教育</dt>
 	<dd>
+		<p class="user_name">你好，<a href="#"><?php echo 狂尊?></a>我的课程</p>
 		<p><img src="/Public/static/common/images/yanzhen.png" class="img1" />验证官方微信<img src="/Public/static/common/images/xiajiantou.png"  class="img2" /></p>
 		<p><a href="#">手机版</a></p>
-		<p class="user_entrance"><a class="denglu">登陆</a>|<a class="zhuce">注册</a></p>
 	</dd>
 </dl>
 <div class="nav fullWidth">
@@ -112,93 +112,57 @@
 		</div>
 	</div>
 </div>
-<dl class="vcourse_pay_box">
-	<dt><p>购买课程</p><a class="close"><img src="/Public/static/common/images/close.png"></a></dt>
-	<dd>
-		<div class="pic">
-			<p class="left"><img src="<?php echo ($data["self"]["path"]); ?>" alt=""/></p>
-			<p class="right">
-				<span class="tt">恋爱魔方</span>
-				<span class="time">课时：<?php echo ($data["self"]["time"]); ?></span>
-				<span class="price">￥<b>1999</b></span>
-			</p>
-		</div>
-		<div class="btn">
-			<form action="pay.php">
-				<p class="left"><label><input type="checkbox" name="">同意</label><a href="#">《浪迹教育用户服务协议》</a></p>
-				<P class="right"><span class="cancel">取消</span><button>去支付</button></p>
-			</form>
-		</div>
-	</dd>
-</dl>
 <div class="bodyauto">
-	<dl class="vcourse_intro fullWidth">
-		<dt><img src="<?php echo ($data["self"]["path"]); ?>"></dt>
-		<dd>
-			<div class="tt"><h2><?php echo ($data["self"]["title"]); ?></h2><span><?php echo ($data["self"]["time"]); ?></span></div>
-			<div class="people"><span><img src="/Public/static/course/images/zan1.png"><?php echo ($data["self"]["like"]); ?></span><span><img src="/Public/static/course/images/people.png"><?php echo ($data["self"]["number"]); ?></span></div>
-			<div class="intro">
-				<span>本课程适合人群：</span><p><?php echo ($data["self"]["summary"]); ?></p>
-			</div>
-			<div class="price">￥<span><?php echo ($data["self"]["price"]); ?></span></div>
-			<div class="buy"><a class="btn">购买课程</a><a href="#" target="_blank">咨询</a></div>
-			<div class="share">
-		<span>分享到：</span>
-		<div class="bdsharebuttonbox">
-		<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-		<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-		<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-		<a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-		</div>
-		<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{}};
-						with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-</div>
-		</dd>
-	</dl>
-
-<?=W('Comment/right',array($data['self']['id']))?>
-
-	<div class="body_left whiteBg">
-		<div class="vcourse_left_title"><span class="current"><?php if($data['self']['type'] == 1 ): ?>套餐介绍 <?php else: ?>课程介绍<?php endif; ?></span><span>评论</span></div>
-		<div class="vcourse_tab fullWidth2">
-			<div class="vcourse_con">
-				<!-- <?php echo ($data["self"]["title"]); ?>：<br/> -->
-				<?php echo (formatImageHtmlContent($data["self"]["content"])); ?>
-			</div>
-			<?php if($data['self']['type'] == 1 ): ?><ul class="vcourse_list1 fullWidth2">
-			<?php if(is_array($data["child"])): foreach($data["child"] as $key=>$id): ?><li class="li3">
-					<div class="box">
-						<div class="pic">
-							<a href="#" title="">
-								<img originalsrc="<?php echo ($id["thumbpath"]); ?>" alt="" class="lazy">
-								<p><span></span><label><?php echo ($id["number"]); ?>人已学</label></p>
-							</a>
-						</div>
-						<p class="tt"><span><?php echo ($id["title"]); ?></span><label>课时<?php echo ($id["lesson"]); ?>节</label></p>
-					</div>
-				</li><?php endforeach; endif; ?>
-			</ul><?php endif; ?>
-		</div>
-		<div class="vcourse_tab" style="display:none;">
-			<dl class="comment_form" vid="<?php echo ($data["self"]["id"]); ?>">
-				<!-- <dt>网友评论</dt> -->
-				<dd>
-					
-						<textarea placeholder="文明上网理性发言，请遵守新闻评论服务协议" class="comment_content"></textarea>
-						<p><button class="submitComment">提交</button></p>
-				
-				</dd>
-			</dl>
-			<dl class="comment_list">
-				<dt>全部评论<img src="/Public/static/common/images/comment.png"/><span><?php echo ($data["self"]["comment"]); ?></span></dt>
-				<?php if($comments['status']): if(is_array($comments["data"])): foreach($comments["data"] as $key=>$id): ?><dd>
-				<?=W('Comment/item',array($id))?>
-				</dd><?php endforeach; endif; endif; ?>
-			</dl>
-			<?php if($comments['data']): ?><div class="comment_more" vid="<?php echo ($data["self"]["id"]); ?>"  page='1'><a>加载更多</a></div><?php endif; ?>
-		</div>
+	<ul class="user_left">
+		<li class="current"><a href="/vcourse/user/">个人中心</a></li>
+		<li><a href="/vcourse/user/mycourse">我的课程</a></li>
+	</ul>
+	<div class="user_right">
+		<div class="user_right_title">设置</div>
+		<dl class="user_head">
+			<dt><p><img src="/Public/static/common/images/camera.png" class="myheader"><br>修改我的头像</p><img src="<?php echo ($userinfo["thumbpath"]); ?>" id="user_icon_avater"></dt>
+			<dd>
+				<p><label><?php echo ($userinfo["nickname"]); ?></label><span class="edit"><img src="/Public/static/common/images/pen.png">修改昵称</span></p>
+				<form>
+					<input type="text" value="<?php echo ($userinfo["nickname"]); ?>" rel="<?php echo ($userinfo["nickname"]); ?>"/>
+					<button class="updateName">修改</button>
+					<a class="cancel">取消</a>
+				</form>
+			</dd>
+		</dl>
+		<ul class="user_number">
+			<li>
+				<p>电话号码</p>
+				<div><?php echo ($userinfo["mobile"]); ?> (不可修改)</div>
+			</li>
+			<li>
+				<p>微信号</p>
+				<div>
+					<form>
+						<input type="text" value="<?php echo ($userinfo["weixin"]); ?>" rel="<?php echo ($userinfo["weixin"]); ?>" disabled="disabled" />
+						<button class='updateWechat'>确认修改</button>
+						<a class="cancel">取消</a>
+						<span class="edit"><img src="/Public/static/common/images/pen.png">修改微信</span>
+					</form>
+				</div>
+			</li>
+			<li>
+				<p>密码</p>
+				<div>
+					<form>
+						<input type="password" value="15475847769" rel="15475847769" disabled="disabled" />
+						<button class="updatePassword">确认修改</button>
+						<a class="cancel">取消</a>
+						<span class="edit"><img src="/Public/static/common/images/pen.png">修改密码</span>
+					</form>
+				</div>
+			</li>
+		</ul>
 	</div>
 </div>
+<form id='file_upload' method='post' url="<?=$uploadUrl?>">
+	<input type='file' class="hidden_file" name='file' />
+</form>
 
 <div class="bodyauto">
 	<div class="footer fullWidth">

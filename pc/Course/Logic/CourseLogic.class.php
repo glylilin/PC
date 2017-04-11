@@ -71,7 +71,7 @@ class CourseLogic extends Model{
     	return $this->formatCourseTreeLogic();
     }
     
-    /*
+    /**
      * 加载图片后的结果
      */
     public function formatCourseImageLogic($tree_data){
@@ -193,5 +193,16 @@ class CourseLogic extends Model{
     	$course_model = D("Course");
     	$data = $course_model->getCourseInfoById($id);
     	return $data;
+    }
+    /**
+     * 获取相关推荐规则为该视频的类别但不包含本身
+     * @param unknown $typeid
+     * @param unknown $cid
+     */
+    public function getRemmendCourseListLogic($typeid,$cid){
+       $course_model = D('Course');
+        $cache_data =  $course_model->getRemmendCourseList($typeid,$cid);
+        $cache_data = $this->formatCourseImageLogic($cache_data);
+        return $cache_data;
     }
 }

@@ -1,0 +1,40 @@
+<div class="bodyauto">
+	<ul class="user_left">
+		<li><a href="/vcourse/user/">个人中心</a></li>
+		<li class="current"><a href="/vcourse/user/mycourse">我的课程</a></li>
+	</ul>
+
+	<div class="user_right">
+		<dl class="user_my_vcourse fullWidth2">
+			<dt>我的课程</dt>
+			<if condition="$orderData">
+			<foreach name='orderData' item='id'>
+			<dd>
+				<p class="num">课程订单：<{$id.onum}></p>
+				<div class="left">
+					<a href="#" title=""><img src="<{$id.thumbpath}>"></a>
+					<div>
+						<span><{$id.title}></span>
+						<label>课时<{$id.lesson}>节&nbsp;&nbsp;<{$id.number}>人在学</label>
+						<p>￥<b><{$id.price}></b>/VIP2:￥<{$id.vip_price}></p>
+					</div>
+				</div>
+				<div class="right">
+					<div>
+					<if condition="$id['pay_type']">
+						<p>状态<a>已购买</a></p>
+						<span>购买时间：<{$id.pay_time|formatOrderTime=###}></span>
+						<else/>
+						<p>状态<a class="nopay">未支付</a></p>
+						<span>下单时间：<{$id.add_time|formatOrderTime=###}></span>
+						</if>
+						
+					</div>
+				</div>
+			</dd>
+		</foreach>
+			</if>
+			
+		</dl>
+	</div>
+</div>

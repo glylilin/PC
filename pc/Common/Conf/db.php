@@ -2,7 +2,7 @@
 return array(
     'DB_TYPE'               =>  'mysql',     
     'DB_HOST'               =>  'localhost',
-    'DB_NAME'               =>  'app',      
+    'DB_NAME'               =>  'langji_app',      
     'DB_USER'               =>  'root',    
     'DB_PWD'                =>  'admin',      
     'DB_PORT'               =>  '3306',   

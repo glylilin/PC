@@ -67,4 +67,9 @@ function numberFormat($number){
 function briefContent($content){
 	return str_replace("适合人群：","",$content);
 }
+
+function formatOrderTime($time){
+    return date("Y-m-d",$time);
+}
+
 ?>

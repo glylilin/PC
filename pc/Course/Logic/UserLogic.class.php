@@ -28,4 +28,18 @@ class UserLogic extends Model{
     	}
     	return false;
     }
+    /**
+     * 获取用户信息
+     */
+    public function getUserInfoLogic($id){
+        $user_model = D("User");
+        $data = $user_model->getUserInfoById($id);
+        if($data){
+           $attach_logic =  D('Attach',"Logic");
+           $cache = $attach_logic->getCdmImagesByidLogic($data['avatar_id']);
+           $data['path'] = $cache['path'];
+           $data['thumbpath'] = $cache['thumbpath'];
+        }
+        return $data;
+    }
 }

@@ -91,6 +91,27 @@ $(function(){
 	$(".pay_box>.btn>p>a").click(function(){
 		$(this).addClass("current").siblings("a").removeClass("current");
 	})
+//修改头像	
+	$('.myheader').on("click",function(){
+		$(".hidden_file").click();
+	});
+	$(".hidden_file").change(function(){
+		var formData = new FormData($('#file_upload')[0]);
+		var url = $("#file_upload").attr('url');
+		$.ajax({
+		    url:url,
+		    cache: false,
+		    data: formData,
+		    dataType:"JSON",
+		    type:"POST",
+		    processData: false,
+		    contentType: false
+		}).done(function(res) {
+			if(res['isSuccessful']){
+				$('#user_icon_avater').attr('src',res.data.user.avatarPath);
+			}
+		}).fail(function(res) {});
+	});
 //修改昵称
 	$(".user_head .edit").click(function(){
 		$(this).parent().hide();
@@ -101,6 +122,31 @@ $(function(){
 		$(this).parent().siblings("p").show();
 		$(this).siblings("input").val($(this).siblings("input").attr("rel"));
 	})
+	$('.updateName').click(function(){
+		var nickname = $(this).prev().val();
+		if(!nickname){
+			return;
+		}
+		var url="/vcourse/user/updateNickName";
+		var This = this;
+		$.ajax({
+			url:url,
+			type:"POST",
+			data:{'nickname':nickname},
+			dataType:"JSON",
+			success:function(res){
+				if(res['status']){
+					$(This).siblings("input").val(nickname);
+					$(This).siblings("input").attr("rel",nickname);
+					$(This).parent().siblings("p").find("label").text(nickname);
+				}
+				$(This).parent().hide();
+				$(This).parent().siblings("p").show();
+				
+			}
+		});
+		return false;
+	});
 //修改号码
 	$(".user_number .edit").click(function(){
 		$(this).siblings("input").removeAttr("disabled"); 
@@ -114,6 +160,81 @@ $(function(){
 		$(this).siblings("input").val($(this).siblings("input").attr("rel"));
 	})
 
+	$('.updateWechat').on('click',function(){
+		var wechat = $(this).prev().val();
+		if(!wechat){
+			$(this).hide();
+			$(this).siblings(".cancel").hide();
+			$(this).siblings(".edit").show();
+			$(this).siblings("input").attr("disabled","disabled"); 
+			$(this).siblings("input").val($(this).siblings("input").attr("rel"));
+			return false;
+		}
+		var url="/vcourse/user/updateWechat";
+		var This = this;
+		$.ajax({
+			url:url,
+			type:"POST",
+			data:{'weixin':wechat},
+			dataType:"JSON",
+			success:function(res){
+				if(res['status']){
+					$(This).siblings("input").val(wechat);
+					$(This).siblings("input").attr("rel",wechat);
+					
+				}else{
+					$(This).siblings("input").val($(This).siblings("input").attr("rel"));
+				}
+				$(This).hide();
+				$(This).siblings(".cancel").hide();
+				$(This).siblings(".edit").show();
+				$(This).siblings("input").attr("disabled","disabled"); 
+			}
+		});
+		return false;
+	});
+	//修改密码
+	$('.updatePassword').on('click',function(){
+		var password = $(this).prev().val();
+		if(!password){
+			$(this).hide();
+			$(this).siblings(".cancel").hide();
+			$(this).siblings(".edit").show();
+			$(this).siblings("input").attr("disabled","disabled"); 
+			$(this).siblings("input").val($(this).siblings("input").attr("rel"));
+			return false;
+		}
+		if(password.length < 6){
+			$(this).hide();
+			$(this).siblings(".cancel").hide();
+			$(this).siblings(".edit").show();
+			$(this).siblings("input").attr("disabled","disabled"); 
+			$(this).siblings("input").val($(this).siblings("input").attr("rel"));
+			return false;
+		}
+		var url="/vcourse/user/updatePassword";
+		var This = this;
+		$.ajax({
+			url:url,
+			type:"POST",
+			data:{'password':password},
+			dataType:"JSON",
+			success:function(res){
+				if(res['status']){
+					$(This).siblings("input").val(wechat);
+					$(This).siblings("input").attr("rel",wechat);
+					
+				}else{
+					$(This).siblings("input").val($(This).siblings("input").attr("rel"));
+				}
+				$(This).hide();
+				$(This).siblings(".cancel").hide();
+				$(This).siblings(".edit").show();
+				$(This).siblings("input").attr("disabled","disabled"); 
+			}
+		});
+		return false;
+	});
 //懒加载
 	$(".lazy").delayLoading({
 		defaultImg: "./Public/static/common/images/load.gif",           // 预加载前显示的图片

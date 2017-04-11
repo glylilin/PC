@@ -1,0 +1,64 @@
+<div class="body_right">
+		<div class="whiteBg fullWidth2">
+		<if condition="$userData">
+			<dl class="vcourse_daoshi">
+				<dt>课程主讲导师</dt>
+				<dd>
+					<div class="name">
+						<span><img src="<{$userData.thumbpath}>" alt=""></span>
+						<p>
+						<label>
+						<if condition="$userData['nickname']">
+						<{$userData.nickname}>
+						<else/>
+						<{$userData.mobile|formatPhone=###}>
+						</if>
+						</label>实名认证导师</p>
+					</div>
+					<div class="con">《简爱》创始人，《大尧秀》主持人，《话术红宝书》联合作者，澳洲海归，前职业魔术师，思维天马行空的顶级话术艺术家</div>
+				</dd>
+			</dl>
+			</if>
+			<if condition="$remmendData">
+			<dl class="vcourse_right_like">
+				<dt>你可能感兴趣的课程</dt>
+				<dd>
+					<ul class="vcourse_list1 fullWidth2">
+					<foreach name='remmendData' item ='id'>
+						<li class="li2">
+							<div class="box">
+							<if condition="$id['type'] eq 2">
+								<div class="pic">
+									<a href="/vcourse/view/<{$id.id}>" title="<{$id.title}>">
+										<img originalsrc="<{$id.thumbpath}>" alt="" class="lazy">
+										<p><span></span><label><{$id.number}>人已学</label></p>
+									</a>
+								</div>
+							<else/>
+								<div class="pic">
+									<a href="/vcourse/entry/<{$id.type}>/<{$id.id}>" title="<{$id.title}>">
+										<img originalsrc="<{$id.thumbpath}>" alt="" class="lazy">
+										<p><span></span><label><{$id.number}>人已学</label></p>
+									</a>
+								</div>
+							</if>
+								<p class="tt"><span><{$id.title}></span><label>课时<{$lesson}>节</label></p>
+								<p class="price">￥<b><{$id.price}></b>/VIP2:￥<{$id.vip_price}></p>
+							</div>
+						</li>
+						</foreach>
+				
+					</ul>
+				</dd>
+			</dl>
+			</if>
+		</div>
+		<dl class="app_download fullWidth2">
+			<dt><b>浪迹教育APP</b>从屌丝蜕变男神神器</dt>
+			<dd>
+				<span><img src="__IMAGES__/app_download.jpg"></span>
+				<p><img src="__IMAGES__/app_logo.png">扫码下载</p>
+				<label><img src="__IMAGES__/icon1.png"></label>
+			</dd>
+		</dl>
+</div>

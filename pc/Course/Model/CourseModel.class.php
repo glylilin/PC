@@ -63,4 +63,15 @@ class CourseModel extends BaseModel{
     	$data = $this->where($where)->order($this->sort)->select();
     	return $data;
     }
+    
+    /**
+     * 获取相关推荐规则为该视频的类别但不包含本身
+     * @param unknown $typeid
+     * @param unknown $cid
+     */
+    public function getRemmendCourseList($typeid,$cid){
+       $where = $this->extWhere;
+       $where .=" and type=".$typeid." and id !=".$cid;
+       return $this->field($this->fields)->where($where)->limit(3)->select();
+    }
 }

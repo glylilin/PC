@@ -16,4 +16,12 @@ class UserModel extends BaseModel{
 		$condition .=" and id = '".$id."'";
 		return $this->where($condition)->find();
 	}
+	/**
+	 * 更新信息
+	 * @param unknown $where
+	 * @param unknown $updateData
+	 */
+	public function updateUserInfo($where,$updateData){
+	    return $this->where($where)->save($updateData);
+	}
 }

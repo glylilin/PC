@@ -191,6 +191,8 @@
 
 .error{color:red;font-size:12px;}
 .vcourse_con img{width:100%;}
+.myheader{cursor:pointer;}
+#file_upload{display:none;}
 
 
 

@@ -27,4 +27,9 @@ class UserService extends Model{
        return $result;
     }
     
+    public function getUserInfoService($uid){
+        $user_Logic = D("User","Logic");
+        return $user_Logic->getUserInfoLogic($uid);
+    }
+    
 }

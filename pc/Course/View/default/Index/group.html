@@ -28,75 +28,11 @@
 			</div>
 			<div class="price">￥<span><{$data.self.price}></span></div>
 			<div class="buy"><a class="btn">购买课程</a><a href="#" target="_blank">咨询</a></div>
-			<div class="share">
-				<span>分享到：</span>
-				<div class="bdsharebuttonbox">
-				<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-				<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-				<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
-				<a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
-				</div>
-				<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"32"},"share":{}};
-				with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-			</div>
+			<Custom:Share/>
 		</dd>
 	</dl>
 
-	<div class="body_right">
-		<div class="whiteBg fullWidth2">
-			<!-- <dl class="vcourse_daoshi">
-				<dt>课程主讲导师</dt>
-				<dd>
-					<div class="name">
-						<span><img src="__OIMAGES__/mentor1.jpg" alt=""></span>
-						<p><label>大尧 Mr. Yao</label>实名认证导师</p>
-					</div>
-					<div class="con">《简爱》创始人，《大尧秀》主持人，《话术红宝书》联合作者，澳洲海归，前职业魔术师，思维天马行空的顶级话术艺术家</div>
-				</dd>
-			</dl> -->
-
-			<dl class="vcourse_right_like">
-				<dt>你可能感兴趣的课程</dt>
-				<dd>
-					<ul class="vcourse_list1 fullWidth2">
-						<li class="li2">
-							<div class="box">
-								<div class="pic">
-									<a href="#" title="">
-										<img originalsrc="__OIMAGES__/001.jpg" alt="" class="lazy">
-										<p><span>传奇PUA魔卡</span><label>2579人已学</label></p>
-									</a>
-								</div>
-								<p class="tt"><span>恋爱方法</span><label>课时1节</label></p>
-								<p class="price">￥<b>18000</b>/VIP2:￥17000</p>
-							</div>
-						</li>
-						<li class="li2">
-							<div class="box">
-								<div class="pic">
-									<a href="#" title="">
-										<img originalsrc="__OIMAGES__/001.jpg" alt="" class="lazy">
-										<p><span>传奇PUA魔卡</span><label>2579人已学</label></p>
-									</a>
-								</div>
-								<p class="tt"><span>恋爱方法</span><label>课时1节</label></p>
-								<p class="price">￥<b>18000</b>/VIP2:￥17000</p>
-							</div>
-						</li>
-					</ul>
-				</dd>
-			</dl>
-
-		</div>
-		<dl class="app_download fullWidth2">
-			<dt><b>浪迹教育APP</b>从屌丝蜕变男神神器</dt>
-			<dd>
-				<span><img src="__IMAGES__/app_download.jpg"></span>
-				<p><img src="__IMAGES__/app_logo.png">扫码下载</p>
-				<label><img src="__IMAGES__/icon1.png"></label>
-			</dd>
-		</dl>
-	</div>
+<?=W('Comment/right',array($data['self']['id']))?>
 
 	<div class="body_left whiteBg">
 		<div class="vcourse_left_title"><span class="current"><if condition="$data['self']['type'] eq 1 ">套餐介绍 <else/>课程介绍</if></span><span>评论</span></div>

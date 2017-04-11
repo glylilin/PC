@@ -17,6 +17,7 @@ return array(
 		
 	),
     'APP_HOST'=>'https://app.puamap.com/api/v2/',
+    'APP_HOST2'=>'http://huati.pauamap.com/',
 	'COMMENT_REPLAY_PAGE_SIZE'=>5
  
 );
