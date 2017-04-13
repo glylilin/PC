@@ -18,6 +18,15 @@ return array(
 	),
     'APP_HOST'=>'https://app.puamap.com/api/v2/',
     'APP_HOST2'=>'http://huati.pauamap.com/',
-	'COMMENT_REPLAY_PAGE_SIZE'=>5
- 
+	'COMMENT_REPLAY_PAGE_SIZE'=>5,
+    'DATA_CACHE_TIME'=>600,
+    'DATA_CACHE_COMPRESS'   =>  true,   // 数据缓存是否压缩缓存
+    'DATA_CACHE_CHECK'      =>  true,   // 数据缓存是否校验缓存
+    'HTML_CACHE_ON'         =>  true, // 开启静态缓存
+    'HTML_CACHE_TIME'       =>  600,   // 全局静态缓存有效期（秒）
+    'HTML_FILE_SUFFIX'      =>  '.shtml', // 设置静态缓存文件后缀
+   
+    'HTML_CACHE_RULES'      =>  array(  
+        '*'=>array('{$_SERVER.REQUEST_URI|md5}'),
+    ),
 );
